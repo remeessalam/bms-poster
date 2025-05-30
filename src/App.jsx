@@ -107,8 +107,8 @@ const BoostMySitesPoster = () => {
           </div>
 
           {/* Main content */}
-          <div className="space-y-6 mb-8 animate-fade-in-up delay-800">
-            <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-6">
+          <div className="space-y-6 mb-8 animate-fade-in-up delay-800 ">
+            <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-6 rounded-xl overflow-hidden">
               <div className="bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-400/30 rounded-2xl p-6 backdrop-blur-sm hover:border-orange-400/50 transition-all duration-500 ease-in-out hover:shadow-2xl hover:shadow-orange-500/20 transform">
                 <p className="text-white font-semibold text-center mb-6 hover:text-orange-200 transition-colors duration-300 text-xl">
                   💼 Why You Should Act Now:
