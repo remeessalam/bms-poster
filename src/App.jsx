@@ -1,6 +1,5 @@
-// src/App.js
 import React, { useEffect, useState } from "react";
-import { Rocket, Trophy, CreditCard } from "lucide-react";
+import { Rocket, Trophy, CreditCard, Calendar, TrendingUp } from "lucide-react";
 
 const BoostMySitesPoster = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -49,7 +48,7 @@ const BoostMySitesPoster = () => {
             <div className="inline-flex items-center px-4 py-2 bg-red-500/20 border border-red-400/30 rounded-full animate-bounce">
               <div className="w-2 h-2 bg-red-400 rounded-full mr-2 animate-ping"></div>
               <span className="text-red-300 text-sm font-semibold">
-                URGENT ANNOUNCEMENT
+                🚨 IMPORTANT UPDATE
               </span>
             </div>
           </div>
@@ -68,24 +67,50 @@ const BoostMySitesPoster = () => {
 
           {/* Key message */}
           <div className="text-center mb-8 animate-fade-in-up delay-500">
-            <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto mb-4">
               <span className="font-bold text-orange-400">June 30th, 2025</span>{" "}
               will be the last day to onboard new subscribers under our current
               subscription plan.
             </p>
-          </div>
-
-          {/* Main content */}
-          <div className="space-y-6 mb-8 animate-fade-in-up delay-700">
-            <p className="text-gray-300 leading-relaxed text-center max-w-3xl mx-auto">
+            <p className="text-gray-300 leading-relaxed max-w-3xl mx-auto">
               This decision has been made to ensure that our existing
               subscribers receive more focused support, stronger connections,
               and better opportunities to grow their businesses with us.
             </p>
+          </div>
 
-            <div className=" bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-6">
-              <div className="bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-400/30 rounded-2xl p-6 backdrop-blur-sm  hover:border-orange-400/50 transition-all duration-500 ease-in-out hover:shadow-2xl hover:shadow-orange-500/20  transform">
-                <p className="text-white font-semibold text-center mb-4 hover:text-orange-200 transition-colors duration-300">
+          {/* Personal message */}
+          <div className="bg-gradient-to-r from-blue-500/20 to-purple-600/20 border border-blue-400/30 rounded-2xl p-6 mb-8 animate-fade-in-up delay-600">
+            <p className="text-white text-center leading-relaxed">
+              We've seen your interest in starting your journey with us—and we'd
+              love to have you on board before June 30th.
+            </p>
+            <p className="text-gray-300 text-center mt-3 leading-relaxed">
+              If investment is the only reason holding you back, we've partnered
+              with loan providers who can help you get started with EMIs as low
+              as <span className="font-bold text-orange-400">₹8,000/month</span>
+              , even if your CIBIL score isn't strong.
+            </p>
+          </div>
+
+          {/* Future plans notice */}
+          <div className="bg-gradient-to-r from-purple-500/20 to-pink-600/20 border border-purple-400/30 rounded-2xl p-6 mb-8 animate-fade-in-up delay-700">
+            <div className="flex items-center justify-center mb-3">
+              <Calendar className="w-5 h-5 text-purple-400 mr-2" />
+              <span className="text-purple-300 font-semibold">2026 Update</span>
+            </div>
+            <p className="text-white text-center leading-relaxed">
+              We'll be back with a brand-new subscription model in 2026, but
+              until then, this is the final chance to join under the current
+              structure.
+            </p>
+          </div>
+
+          {/* Main content */}
+          <div className="space-y-6 mb-8 animate-fade-in-up delay-800">
+            <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-6">
+              <div className="bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-400/30 rounded-2xl p-6 backdrop-blur-sm hover:border-orange-400/50 transition-all duration-500 ease-in-out hover:shadow-2xl hover:shadow-orange-500/20 transform">
+                <p className="text-white font-semibold text-center mb-6 hover:text-orange-200 transition-colors duration-300 text-xl">
                   💼 Why You Should Act Now:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4 text-sm">
@@ -100,15 +125,14 @@ const BoostMySitesPoster = () => {
                       </div>
 
                       <div className="relative z-10">
-                        <div className="text-2xl mb-2 group-hover:scale-110 transition-transform duration-300 ease-in-out text-orange-400">
+                        <div className="text-2xl mb-3 group-hover:scale-110 transition-transform duration-300 ease-in-out text-orange-400">
                           <item.icon className="mx-auto" />
                         </div>
                         <p className="text-gray-200 group-hover:text-white transition-colors duration-300">
-                          <span className="font-semibold text-orange-400 group-hover:text-orange-300 transition-colors duration-300">
-                            {item.title}
+                          <span className="font-semibold text-orange-400 group-hover:text-orange-300 transition-colors duration-300 block mb-2">
+                            ✅ {item.title}
                           </span>
-                          <br />
-                          <span className="group-hover:text-gray-100 transition-colors duration-300">
+                          <span className="group-hover:text-gray-100 transition-colors duration-300 text-sm leading-relaxed">
                             {item.description}
                           </span>
                         </p>
@@ -119,15 +143,22 @@ const BoostMySitesPoster = () => {
               </div>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-orange-400 mb-4 animate-pulse">
+            <div className="text-center bg-gradient-to-r from-red-500/20 to-orange-600/20 border border-red-400/30 rounded-2xl p-6">
+              <h3 className="text-2xl font-bold text-orange-400 mb-4 animate-pulse flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 mr-2" />
                 🔥 This Is Your Window
               </h3>
-              <p className="text-gray-300 leading-relaxed max-w-2xl mx-auto">
+              <p className="text-gray-300 leading-relaxed max-w-2xl mx-auto mb-4">
                 If you've been waiting for a perfect time, this is it. Don't
                 wait for 2026 when we return with a new (and possibly higher)
-                package. Your idea deserves a real start. Let's build it
-                together.
+                package.
+              </p>
+              <p className="text-white font-semibold">
+                If you've shown interest before, this is your final chance to
+                begin your journey with us.
+              </p>
+              <p className="text-orange-300 font-bold mt-3 text-lg">
+                Your idea deserves a real start. Let's build it together.
               </p>
             </div>
           </div>
@@ -156,39 +187,6 @@ const BoostMySitesPoster = () => {
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-fade-in-up {
-          animation: fade-in-up 0.8s ease-out forwards;
-        }
-
-        .delay-300 {
-          animation-delay: 0.3s;
-        }
-
-        .delay-500 {
-          animation-delay: 0.5s;
-        }
-
-        .delay-700 {
-          animation-delay: 0.7s;
-        }
-
-        .delay-1000 {
-          animation-delay: 1s;
-        }
-      `}</style>
     </div>
   );
 };
