@@ -42,7 +42,7 @@ const BoostMySitesPoster = () => {
           isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}
       >
-        <div className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl">
+        <div className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl p-4 md:p-12 shadow-2xl">
           {/* Urgent indicator */}
           <div className="flex justify-center mb-6">
             <div className="inline-flex items-center px-4 py-2 bg-red-500/20 border border-red-400/30 rounded-full animate-bounce">
@@ -108,8 +108,8 @@ const BoostMySitesPoster = () => {
 
           {/* Main content */}
           <div className="space-y-6 mb-8 animate-fade-in-up delay-800 ">
-            <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-6 rounded-xl overflow-hidden">
-              <div className="bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-400/30 rounded-2xl p-6 backdrop-blur-sm hover:border-orange-400/50 transition-all duration-500 ease-in-out hover:shadow-2xl hover:shadow-orange-500/20 transform">
+            <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-3 md:p-6 rounded-xl overflow-hidden">
+              <div className="bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-400/30 rounded-xl p-3 md:p-6 backdrop-blur-sm hover:border-orange-400/50 transition-all duration-500 ease-in-out hover:shadow-2xl hover:shadow-orange-500/20 transform">
                 <p className="text-white font-semibold text-center mb-6 hover:text-orange-200 transition-colors duration-300 text-xl">
                   💼 Why You Should Act Now:
                 </p>
@@ -145,7 +145,7 @@ const BoostMySitesPoster = () => {
 
             <div className="text-center bg-gradient-to-r from-red-500/20 to-orange-600/20 border border-red-400/30 rounded-2xl p-6">
               <h3 className="text-2xl font-bold text-orange-400 mb-4 animate-pulse flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 mr-2" />
+                {/* <TrendingUp className="w-6 h-6 mr-2" /> */}
                 🔥 This Is Your Window
               </h3>
               <p className="text-gray-300 leading-relaxed max-w-2xl mx-auto mb-4">
@@ -165,11 +165,11 @@ const BoostMySitesPoster = () => {
 
           {/* CTA Button */}
           <div className="text-center animate-fade-in-up delay-1000">
-            <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black bg-white rounded-2xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-orange-500/25 hover:bg-orange-50 active:scale-95">
+            {/* <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black bg-white rounded-2xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-orange-500/25 hover:bg-orange-50 active:scale-95">
               <span className="relative z-10">Get Started Now</span>
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-400 to-orange-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-orange-400 to-orange-600 opacity-20 blur group-hover:opacity-40 transition-opacity duration-300"></div>
-            </button>
+            </button> */}
 
             <p className="text-sm text-gray-400 mt-4">
               Limited time offer • Ends June 30th, 2025
